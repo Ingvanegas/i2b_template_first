@@ -1,6 +1,4 @@
-$('.menu-toggle').click(function() {
-  alert('hi');
+$('.menu-toggle').click(function() {  
   $('.nav').toggleClass('nav-open', 500);
-  $(this).toggleClass('open');
-  
+  $(this).toggleClass('open');  
 })
