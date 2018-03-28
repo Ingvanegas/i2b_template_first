@@ -212,7 +212,7 @@ body {
 }
 .menu {
   background: #fff;
-  margin: 40px;
+  margin: 80px 40px 40px 40px;
   position: relative;
   overflow: hidden;
 }
@@ -221,7 +221,7 @@ body {
   float: left;
   margin: 0 10px;
   padding: 0 5px 5px;
-  width: 9.099%;
+  width: 7%;
 }
 .menu li a {
   color: #000;
