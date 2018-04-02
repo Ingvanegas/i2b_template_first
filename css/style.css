@@ -81,7 +81,7 @@ body {
   box-shadow: 0 0 2px #4a4848;
 }
 .logo {
-  width: 40px;
+  width: 85px;
   height: 40px;
   position: absolute;
   top: 0;
@@ -185,6 +185,20 @@ body {
   vertical-align: middle;
   color: #4a4848;
   margin-left: 15px;
+}
+.badge {
+  position: relative;
+  display: inline-block;
+}
+.spam_badge {
+  background: #ff0404;
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 8px;
+  border-radius: 15px;
 }
 .menu-toggle {
   padding: 1em;
@@ -344,7 +358,10 @@ body {
   right: -30px;
 }
 .item {
-  height: 350px;
-  width: 100%;
-  background-color: #ccc;
+  height: 300px;
+  width: 150px;
+  padding: 50px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }

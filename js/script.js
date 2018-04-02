@@ -11,7 +11,7 @@ $('.owl-carousel').owlCarousel({
     "<i class='fa fa-angle-left'></i>",
     "<i class='fa fa-angle-right'></i>"
   ],
-  autoplay: true,
+  autoplay: false,
   autoplayHoverPause: true,
   responsive: {
     0: {
@@ -21,7 +21,7 @@ $('.owl-carousel').owlCarousel({
       items: 2
     },
     1000: {
-      items: 4
+      items: 5
     }
   }
 });
