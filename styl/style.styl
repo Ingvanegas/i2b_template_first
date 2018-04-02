@@ -2,104 +2,57 @@ white=#fff
 white-bone=#f5f5f5
 white-bone2=#f8f8f8
 gray-color = #4a4848
+black-color = #2f2f2f
 light-gray-color = #cccccc
+dark-gray-color = #cccccc
 red-color = #ff0404
 blue-color = #3aa5f1
+shadow-blue = #f6faff
 green-color = #59c8cc
 height-nav = 100px
 nav-icon-size = 24px
 
 @font-face
-    font-family: 'Equitan Sans'
-    src: url('../fonts/Equitan Sans/EquitanSans-Regular.otf')
+  font-family: 'Equitan Sans'
+  src: url('../fonts/Equitan Sans/EquitanSans-Regular.otf')
 
 html, body
-    margin: 0 auto
-    background-color: white
-    font-family: 'Equitan Sans'
-    overflow-x: hidden
+  margin: 0 auto
+  background-color: white
+  font-family: 'Equitan Sans'
+  overflow-x: hidden
 
-.row 
-    margin-top: 0.5rem
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
+.bg-blue
+  background-color: blue-color
 
-.col 
-    flex: 1 1 8%
-    margin: 0 0 0.5rem 0
-    padding: 0.5em 10px
-    box-sizing: border-box
+.fore_color_blue
+  color: blue-color !important
 
-.col-span-1 
-  flex-basis: 8.3333%
-
-
-.col-span-2 
-  flex-basis: 16.6666% 
-
-
-.col-span-3 
-  flex-basis: 25%
-
-
-.col-span-4 
-  flex-basis: 33.3333%
-
-
-.col-span-5 
-  flex-basis: 41.6666%
-
-
-.col-span-6 
-  flex-basis: 50%
-
-
-.col-span-7 
-  flex-basis: 58.3333%
-
-
-.col-span-8 
-  flex-basis: 66.6666%
-
-
-.col-span-9 
-  flex-basis: 75%
-
-
-.col-span-10 
-  flex-basis: 83.3333%
-
-
-.col-span-11 
-  flex-basis: 91.6666%
-
-
-.col-span-12 
-  flex-basis: 100%
+.fore_color_white
+  color: white !important
 
 .search-box .icon 
-    position: absolute
-    top: 12px
-    left: 20px 
-    width: 40px 
-    cursor: pointer
-    color: red-color
+  position: absolute
+  top: 12px
+  left: 20px 
+  width: 40px 
+  cursor: pointer
+  color: red-color
 
 .search
-    width: 100%
-    min-width: 90%
-    font-size: 14px
-    color: gray-color
-    border-radius: 100px
-    padding: 5px 40px
-    border: 1px solid gray-color
-    min-height: 40px
+  width: 100%
+  min-width: 90%
+  font-size: 14px
+  color: gray-color
+  border-radius: 100px
+  padding: 5px 40px
+  border: 1px solid gray-color
+  min-height: 40px
 
 .search:focus
-    outline: none
-    border: 1px solid gray-color
-    box-shadow: 0 0 2px gray-color
+  outline: none
+  border: 1px solid gray-color
+  box-shadow: 0 0 2px gray-color
 
 .logo
     width: 80px
@@ -195,10 +148,10 @@ html, body
     background: transparent
   
 .nav-icon   
-    font-size: nav-icon-size 
-    vertical-align: middle
-    color: gray-color
-    margin-left: 15px
+  font-size: nav-icon-size 
+  vertical-align: middle
+  color: gray-color
+  margin-left: 15px
 
 .badge  
   position: relative  
@@ -215,11 +168,11 @@ html, body
   border-radius: 15px
 
 .menu-toggle
-    padding: 1em
-    position: absolute
-    top: .5em
-    right: .5em
-    cursor: pointer
+  padding: 1em
+  position: absolute
+  top: .5em
+  right: .5em
+  cursor: pointer
 
 @media (min-width: 700px)   
   .menu-toggle 
@@ -388,9 +341,72 @@ html, body
   border-radius: 100%
 
 .item
-  height:300px
-  width: 150px
-  padding: 50px
+  height:400px
+  width: 250px
   background-color:white
   border: 1px solid light-gray-color
   border-radius: 10px
+
+.product 
+  position: relative
+  width: 100%
+  height: 100%
+  background-repeat: no-repeat  
+
+.product > img 
+  width: 100px !important
+  height 210px
+  margin-left: 30%
+
+.product_container
+  width: 100%
+  bottom: 5
+  background-color: shadow-blue
+  position: absolute
+  overflow: visible
+  min-height: 35%
+  border-radius: 0px 0px 10px 10px
+  font-size:18px
+
+.product_container > span
+  width: 100%
+  margin: 5px 0px 0px 10px
+  display: block
+
+.product_container > div > input
+  width: 50px
+  height: 35px
+  border-radius: 5px 
+  display: inline-block
+  margin: 5px 5px 0px 5px
+  text-align: center
+
+.product_container > div > button  
+  font-size: 16px
+  margin-bottom: 5px
+  border: none
+  min-width: 50%
+  padding: 10px
+
+.product_badge 
+  display: block
+  padding: 5px
+  background-color: black-color
+  color: white
+  border-radius: 5px
+  margin: 5px
+  min-width: 20px
+  max-width: 30%
+  text-align: center
+  font-size:17px
+
+.product_title
+  text-transform: uppercase 
+  font-size:16px
+
+.Oh
+  padding: 2px
+  border-radius: 5px
+  width: auto !important
+  display: inline-block !important
+  margin: 5px 5px 0px 6px !important
