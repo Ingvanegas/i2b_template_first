@@ -15,6 +15,7 @@ html, body
     margin: 0 auto
     background-color: white
     font-family: 'Equitan Sans'
+    overflow-x: hidden
 
 .row 
     margin-top: 0.5rem
@@ -105,7 +106,11 @@ html, body
     top: 0
 
 .container-fluid
-    width: 95%
+    width: 100%
+    padding: 20px 1px 20px 0px  
+
+.container
+    width: 90%
     margin:0 auto
     padding: 20px
 
@@ -154,7 +159,7 @@ html, body
 
 @media (min-width: 700px)    
   .nav li:nth-child(5) 
-    margin-left: 60px;
+    margin-left: 60px
 
 .nav a
     color: #000000
@@ -236,9 +241,10 @@ html, body
 
 .menu 
   background: white
-  margin: 80px 40px 40px 40px
   position: relative
   overflow: hidden
+  padding-left: 0px !important
+  top:23px
 
 .menu li 
   list-style: none
@@ -246,6 +252,7 @@ html, body
   margin: 0px 10px
   padding: 0px 5px 0px 5px 
   max-width: 11%
+  min-width: 6%
 
 .menu li:hover
   background-color: white-bone
@@ -266,17 +273,93 @@ html, body
   font-size: 24px 
 
 .horizontal-line
-  position: absolute
+  position: relative
   width: 100%
-  top: 80px
+  top: 20px
 
 .horizontal-bar
-  position: absolute
+  position: relative
   width: 100%
-  height: 100px;
+  height: 100px
   background-color:blue-color
   text-align: center
-  vertical-align: middle
   font-size: 30px
   color:white
   line-height: 100px
+  margin: 40px 0px 10px 0px
+
+.breadcrumb 
+  clear: left
+  float: left
+  width: 100%
+
+.breadcrumb a 	
+	position: relative 
+	float: left
+	height: 20px
+	padding: 0 15px 0 20px
+	margin-bottom: 2px 
+	font-size: .7em/2
+	color: #666
+	text-decoration: none
+
+@css {
+  .breadcrumb a:after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #fff;
+    z-index: 2;}
+  
+  .breadcrumb a:before {
+    content: '';
+    position: absolute;
+    right: -12px;
+    top: -1px;
+    z-index: 1;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-left: 11px solid #ccc;}
+  
+
+  .breadcrumb a:last-child:after{  
+    display: none}
+  
+  .breadcrumb a:last-child:before{  
+    display: none}
+}
+.offers
+  margin-top: 20px
+  padding: 30px
+  font-size: 24px
+
+.carousel-wrap 
+  width: 100%
+  position: relative
+
+.owl-carousel .item 
+  position: relative
+  z-index: 100 
+  -webkit-backface-visibility: hidden 
+
+.owl-nav > div 
+  margin-top: -26px
+  position: absolute
+  top: 50%
+  color: #cdcbcd
+
+.owl-nav i 
+  font-size: 52px
+
+.owl-nav .owl-prev 
+  left: -30px
+
+.owl-nav .owl-next 
+  right: -30px
+
+.item
+  height:350px
+  width:100%
+  background-color:#ccc
