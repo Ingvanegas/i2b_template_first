@@ -1,5 +1,5 @@
 $('.menu-toggle').click(function() {  
-  $('.nav').toggleClass('nav-open', 500);
+  $('.menu').toggleClass('menu-open', 500);
   $(this).toggleClass('open');  
 });
 
@@ -7,7 +7,6 @@ $('#first_carousel').owlCarousel({
   loop: true,
   margin: 10,
   dots:false,
-  nav: true,
   navText: [
     "<i class='fa fa-angle-left'></i>",
     "<i class='fa fa-angle-right'></i>"
@@ -16,13 +15,16 @@ $('#first_carousel').owlCarousel({
   autoplayHoverPause: true,
   responsive: {
     0: {
-      items: 1
+      items: 1,
+      nav: false,
     },
     700: {
-      items: 3
+      items: 3,
+      nav: true,
     },
-    1400: {
-      items: 5
+    1780: {
+      items: 5,
+      nav: true,
     }
   }
 });
@@ -42,12 +44,12 @@ $('#third_carousel').owlCarousel({
   autoplayHoverPause: true,
   responsive: {
     0: {
-      items: 1,
+      items: 2,
     },
     600: {
       items: 3,
     },
-    1000: {
+    1025: {
       items: 6,
     }
   }
