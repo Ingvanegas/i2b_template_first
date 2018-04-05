@@ -58,11 +58,20 @@ html, body
     width: 80px
     height 40px
     position: absolute
-    top: 0
+    top: 0px    
+
+@media (min-width: 700px)    
+  .logo 
+    left:35%
+
+@media (min-width: 1025px)    
+  .logo
+    left:53%
 
 .container-fluid
     width: 100%
     padding: 20px 1px 20px 0px  
+    overflow: hidden
 
 .container
     width: 90%
@@ -94,11 +103,17 @@ html, body
     list-style: none
 
 .nav li    
-    min-width:10%
+    min-width:15%
 
 @media (min-width: 700px)   
   .nav li 
     display: inline-block    
+    min-width:15%
+
+@media (min-width: 1025px)   
+  .nav li 
+    display: inline-block    
+    min-width:10%
   
 .nav li:nth-child(1)
     width: 70%
@@ -106,15 +121,27 @@ html, body
 
 @media (min-width: 700px)    
   .nav li:nth-child(1) 
+    width:30%
+
+@media (min-width: 1025px)    
+  .nav li:nth-child(1) 
     width:50%
 
 @media (min-width: 700px)    
+  .nav li:nth-child(2) 
+    min-width:15%
+
+@media (min-width: 1025px)    
   .nav li:nth-child(2) 
     min-width:5%
 
 @media (min-width: 700px)    
   .nav li:nth-child(5) 
     margin-left: 60px
+
+@media (min-width: 1025px)    
+  .nav li:nth-child(5) 
+    margin-left: 10px
 
 .nav a
     color: #000000
@@ -135,8 +162,8 @@ html, body
 
  @media (min-width: 700px)    
   .nav a 
-    padding: 0
-    margin-left: 3em
+    padding: 0px
+    margin-left: 0px
   
 .nav a:hover, .nav a:focus
     background: #E4B363
@@ -244,7 +271,7 @@ html, body
 .horizontal-line
   position: relative
   width: 100%
-  top: 20px
+  margin-top: 60px
 
 .horizontal-bar
   position: relative
@@ -408,7 +435,9 @@ html, body
   padding: 2px
   border-radius: 5px
   width: auto !important
-  display: inline-block !important
+  display: inline-block !important  
+
+.item .Oh
   margin: 5px 5px 0px 6px !important
 
 .intermediate
