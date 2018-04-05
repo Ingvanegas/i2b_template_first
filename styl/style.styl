@@ -5,10 +5,23 @@ gray-color = #4a4848
 black-color = #2f2f2f
 light-gray-color = #cccccc
 dark-gray-color = #cccccc
-red-color = #ff0404
+red-color = #e5222a
+red-color-active = #ab000b
+red-color-hover = #ff0404
 blue-color = #3aa5f1
 shadow-blue = #f6faff
-green-color = #59c8cc
+
+tecnologia = #4a6fda
+electrohogar = #59c8cc
+decohogar = #ff9000
+muebles = #ff5b57
+dormitorio = #766bee
+deportes = #7bae00
+infantil = #00b88b
+calzado = #d79444
+bellezayaccesorios = #ff57bb
+moda = #6a5e5e
+
 height-nav = 100px
 nav-icon-size = 24px
 
@@ -21,6 +34,9 @@ html, body
   background-color: white
   font-family: 'Equitan Sans'
   overflow-x: hidden
+
+button 
+  cursor: pointer
 
 .bg-blue
   background-color: blue-color
@@ -180,7 +196,7 @@ html, body
     margin-left: 10px
 
 .nav a
-  color: #000000
+  color: gray-color
   display: block  
   text-decoration: none
   margin-right: 15px
@@ -308,7 +324,7 @@ html, body
   background-color: white-bone
 
 .menu li a 
-  color: #000
+  color: gray-color
   display: inline-block
   font-size: 16px
   text-decoration: none
@@ -322,6 +338,12 @@ html, body
   vertical-align: middle
   font-size: 24px 
 
+.ovale-red:active
+  background-color: red-color-active
+
+.ovale-red:hover
+  background-color: red-color-hover
+
 .horizontal-line
   position: relative
   width: 100%
@@ -331,7 +353,7 @@ html, body
   position: relative
   width: 100%
   height: 100px
-  background-color:green-color
+  background-color:electrohogar
   text-align: center
   font-size: 30px
   color:white
@@ -388,6 +410,7 @@ html, body
   margin-top: 20px
   padding: 30px
   font-size: 24px
+  color: gray-color
 
 .carousel-wrap 
   width: 100%
@@ -525,7 +548,7 @@ html, body
   height: 100px
   width: 20%
   border-radius: 5px
-  background-color: green-color
+  background-color: electrohogar
   min-width: 200px;
 
 @media (min-width: 700px)   
@@ -569,7 +592,7 @@ html, body
 .circle_div
   border-radius:100% 
   display: block 
-  background-color: green-color
+  background-color: electrohogar
   width 100px
   height:100px
   position: absolute
